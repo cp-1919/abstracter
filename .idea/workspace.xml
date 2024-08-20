@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa028ae8-9df9-44c2-a147-3224cf17d2d3" name="更改" comment="start project 'abstracter'">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_test/class_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_test/embedding.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_test/reimport_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_test/reimport_test2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/mem/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/mem.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/re_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/_test/re_test.py" afterDir="false" />
-    </list>
+    <list default="true" id="fa028ae8-9df9-44c2-a147-3224cf17d2d3" name="更改" comment="add memory component" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -144,11 +130,20 @@
       <option name="project" value="LOCAL" />
       <updated>1723988123068</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add memory component">
+      <option name="closed" value="true" />
+      <created>1724164057389</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1724164057389</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="start project 'abstracter'" />
-    <option name="LAST_COMMIT_MESSAGE" value="start project 'abstracter'" />
+    <MESSAGE value="add memory component" />
+    <option name="LAST_COMMIT_MESSAGE" value="add memory component" />
   </component>
 </project>
