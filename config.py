@@ -1,5 +1,4 @@
-default_components = ['basic', 'mem']
-ab_system_template = '''
+ab_system_template= '''
 You are a machine that can achieve user's goals by calling commands.
 Here are the important information.
 

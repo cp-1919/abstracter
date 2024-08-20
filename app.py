@@ -1,8 +1,6 @@
 import ollama
-import typing as t
 import config as abconfig
 from string import Template
-import re
 import warnings
 import json
 from component import Component
@@ -12,32 +10,19 @@ class Abstracter:
     def __init__(
             self,
             system: str = '',
-            config: object = {},
+            config: object = None,
             model: str = 'gemma2:9b',
-            default_components: t.List[str] = abconfig.default_components,
             debug: bool = False,
     ):
         self.system = system
         self.config = config
         self.model = model
-        self.default_components = default_components
         self.debug = debug
         self.general_system = ''
         self.commands = {}
         self.components = {}
         # status
         self.is_update = False
-        # register default components
-        for comp in default_components:
-            try:
-                comp = __import__('components.' + comp, None, locals(), ['component']).component
-            except:
-                warnings.warn(
-                    'Can not import component named "{}".'.format(comp),
-                    DeprecationWarning,
-                    stacklevel=2,
-                )
-            self.register(comp)
 
     def chat(self, messages: list) -> object:
         return ollama.chat(model=self.model, messages=messages, stream=False)['message']
@@ -61,7 +46,7 @@ class Abstracter:
             if self.components[comp].start_method is not None:
                 self.components[comp].start_method(self)
 
-    def update(self, request:str):
+    def update(self, request: str):
         # init
         # call update methods of all components
         res_updates = {}
@@ -121,7 +106,6 @@ class Abstracter:
         ab = Abstracter(
             system=self.system,
             model=self.model,
-            default_components=self.default_components,
             debug=self.debug,
         )
         return ab
